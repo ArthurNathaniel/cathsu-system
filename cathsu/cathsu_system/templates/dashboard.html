@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership Registration - Catholic Students’ Union</title>
+    <title>Dashboard- Catholic Students’ Union</title>
     <link rel="icon" type="image/x-icon" href="{% static  'images/logo.png'%}">
 
     <!-- Bootstrap CSS -->
@@ -73,46 +73,9 @@
             <div class="col-md-10 ">
                 <header>
                     <h2 class="text-center">
-                        All Members </h2>
+                       Dashboard </h2>
                 </header>
-                <p>
-                    <!-- No Records added at the moment! -->
 
-                    <style>
-                        .members {
-                            display: grid;
-                            grid-template-columns: 1fr 1fr 1fr;
-                            border: 2px solid;
-                            align-items: center;
-                            margin: 0 5%;
-                            margin-top: 20px;
-                            padding-block: 20px;
-                            border-radius: 5px;
-
-                        }
-                        .n{
-                            width: 95%;
-                        }
-                    </style>
-                    {% for member in members %}
-                <div class="members">
-                    <div class="n">
-                        <img src="{{member.picture.url}}" alt="" width="150px" height="150px"
-                            style="border-radius:50%;">
-
-                    </div>
-                    <div class="n">
-                        <span>{{member.last_name}}</span>
-
-                    </div>
-                    <div class="n">
-                        <b> <span>{{member.first_name}}</span>
-                        </b>
-                    </div>
-                     
-                </div>
-                {% endfor %}
-                </p>
 
 
 
